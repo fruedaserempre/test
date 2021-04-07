@@ -53,10 +53,11 @@ jobs:
       - name: Deploy to Play Store (BETA)
         id: deploy
         uses: r0adkll/upload-google-play@v1
+        
         with:
           serviceAccountJson: service_account.json
-          packageName: com.package
-          releaseFile: app/build/outputs/bundle/release/app-release.aab
+          packageName: com.fredrueda.testgithub
+          releaseFiles: app/build/outputs/bundle/release/app-release.aab
           track: beta
           whatsNewDirectory: whatsnew/
 
