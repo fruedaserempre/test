@@ -21,6 +21,9 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
+          
+      - name: Grant permissions gradlew
+        run: chmod +x build.gradlew
 
       - name: Grant rights
         run: chmod +x build.gradle
